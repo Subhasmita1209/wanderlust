@@ -3,10 +3,10 @@ const axios=require("axios");
 const mapToken=process.env.MAP_TOKEN;
 module.exports.index=async(req,res)=>{
     const allListings=await Listing.find({});
-    res.render("./Listings/index.ejs",{allListings});
+    res.render("./listings/index.ejs",{allListings});
 }
 module.exports.randerNewform=(req,res)=>{
-  res.render("./Listings/new.ejs")
+  res.render("./listings/new.ejs")
 }
 module.exports.ShowListing=async(req,res)=>{
     let {id}=req.params;
@@ -20,7 +20,7 @@ module.exports.ShowListing=async(req,res)=>{
         req.flash("error","Listing you requested for does not exist!")
         res.redirect("/listings");
     }
-    res.render("./Listings/show.ejs",{listing})
+    res.render("./listings/show.ejs",{listing})
 }
 module.exports.createListing=async(req,res)=>{
 
@@ -64,7 +64,7 @@ module.exports.randerEditform=async(req,res,next)=>{
     }
    let originalImageurl=listing.image.url;
      originalImageurl= originalImageurl.replace("/upload","/upload/w_250")
-    res.render("./Listings/edit.ejs",{listing,originalImageurl});
+    res.render("./listings/edit.ejs",{listing,originalImageurl});
 }
 module.exports.updateListing=async(req,res)=>{
     if(!req.body.listing){
