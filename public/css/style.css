@@ -1,0 +1,124 @@
+body{
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container{
+   flex:1;
+}
+ .navbar{
+    height: 5rem;
+    background-color: white;
+ }
+ .fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+ }
+ .nav-link{
+    color: #222222 !important;
+ }
+ .f-info-links a{
+    text-decoration: none;
+    color: #222222;
+ }
+ .f-info-links a:hover{
+    text-decoration: underline;
+ }
+ .f-info-links,.f-info-socials, .f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .f-info-socials i{
+     font-size: 1.2rem;
+    margin-right: 0.78rem;
+ }
+ .f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:space-evenly;
+ }
+ .listing-card{
+   border:none !important;
+   margin-bottom: 2rem;
+
+ }
+ 
+ .card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+ }
+ .show-page-img{
+   height: 40vh !important;
+   width: 500px !important;
+   border-radius: 12px;
+   object-fit: cover;
+   display: block;
+   margin: 20px auto;
+ 
+ }
+ 
+ .card-body{
+   padding: 0 !important;
+ }
+ .card-text p{
+   color: #222222 !important;
+ }
+ .listing_link {
+   text-decoration: none;
+ }
+ .card-img-overlay{
+   opacity: 0;
+ }
+ .card-img-overlay:hover{
+   opacity: 0.2;
+   background-color: white;
+ }
+
+ .add-btn{
+  background-color: #fe424d !important;
+   border: none !important;
+ }
+ .btn-edit{
+   background-color: #fe424d !important;
+   border: none !important;
+   
+ }
+
+  .listing-card {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: none; 
+  }
+  
+  .rating-badge {
+    font-size: 1rem;
+    color: #ffc107;
+  }
+  
+  .star-icon {
+    font-size: 0.9rem;
+  }
+  
+  /* Remove any default borders */
+  .card, .card-footer, .card-body {
+    border: none !important;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .card-text {
+      font-size: 0.95rem;
+    }
+  }
